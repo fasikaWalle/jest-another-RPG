@@ -1,4 +1,4 @@
-const { TestScheduler } = require('jest')
+
 const Player=require('../lib/Player')
 const Potion=require('../lib/Potion')
 jest.mock('../lib/Potion')
@@ -67,3 +67,4 @@ test('if inventory use potion',()=>{
     expect(countPotion).toBeGreaterThan(player.inventory.length)
     
 })
+
